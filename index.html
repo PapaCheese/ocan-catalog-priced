@@ -1,0 +1,321 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-family: "Rubik", sans-serif;
+      background-color: rgb(240, 240, 240);
+    }
+
+    .topnav {
+      padding: 8px 16px;
+      background-color: rgb(35, 34, 36);
+      color: white;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .title {
+      padding: 16px;
+      font-size: 24px;
+      font-weight: 600;
+      border-bottom: black solid 2px;
+      width: fit-content;
+    }
+
+    .title-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .subtitle {
+      padding: 8px;
+      color: rgb(94, 94, 94);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto auto auto;
+      width: 100%;
+      max-width: 100%;
+      gap: 16px;
+    }
+
+    .image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .image-container .image {
+      width: 200px;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .image-details-container {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 8px;
+      gap: 8px;
+      opacity: 70%;
+      margin-bottom: 16px;
+    }
+    .image-detail-container {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .image-details-container img,
+    .image-details-container svg {
+      width: 18px;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      opacity: 80%;
+    }
+
+    @media only screen and (max-width: 2000px) {
+      .grid {
+        grid-template-columns: auto auto auto auto;
+      }
+      .image-container .image {
+        width: 300px;
+      }
+      .image-details-container {
+        width: 300px;
+      }
+    }
+
+    @media only screen and (max-width: 1600px) {
+      .grid {
+        grid-template-columns: auto auto auto auto;
+      }
+      .image-container .image {
+        width: 200px;
+      }
+      .image-details-container {
+        width: 200px;
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .grid {
+        grid-template-columns: auto auto auto auto;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .grid {
+        grid-template-columns: auto auto auto;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .grid {
+        grid-template-columns: auto auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <img src="./ocan_logo.svg" height="100px" />
+    <!-- <div>CATALOG</div> -->
+  </div>
+
+  <div class="title-container"></div>
+
+  <div style="padding: 0 8px">
+    <div class="grid">
+      <div class="image-container">
+        <div style="position: relative">
+          <img src="./ocan_logo_black.svg" height="32px" class="watermark" />
+          <img src="./catalog/250ml 92h.jpg" class="image" />
+        </div>
+        <div class="image-details-container">
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.9042 2.1001L20.8037 3.51431L22.2179 13.4138L13.0255 22.6062C12.635 22.9967 12.0019 22.9967 11.6113 22.6062L1.71184 12.7067C1.32131 12.3162 1.32131 11.683 1.71184 11.2925L10.9042 2.1001ZM11.6113 4.22142L3.83316 11.9996L12.3184 20.4849L20.0966 12.7067L19.036 5.28208L11.6113 4.22142ZM13.7327 10.5854C12.9516 9.80433 12.9516 8.538 13.7327 7.75695C14.5137 6.9759 15.78 6.9759 16.5611 7.75695C17.3421 8.538 17.3421 9.80433 16.5611 10.5854C15.78 11.3664 14.5137 11.3664 13.7327 10.5854Z"
+              ></path>
+            </svg>
+            <span>₪1.86<small> Per unit</small></span>
+          </div>
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z"
+              ></path>
+            </svg>
+            <span>200<small> Units per package</small></span>
+          </div>
+          <div class="image-detail-container">
+            <img src="./contrast-drop-2-line.svg" />
+            250ml&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-left-right-fill.svg" />
+            55mm&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-up-down-fill.svg" />
+            92mm
+          </div>
+        </div>
+      </div>
+      <div class="image-container">
+        <div style="position: relative">
+          <img src="./ocan_logo_black.svg" height="32px" class="watermark" />
+          <img src="./catalog/330ml 115h.jpg" class="image" />
+        </div>
+        <div class="image-details-container">
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.9042 2.1001L20.8037 3.51431L22.2179 13.4138L13.0255 22.6062C12.635 22.9967 12.0019 22.9967 11.6113 22.6062L1.71184 12.7067C1.32131 12.3162 1.32131 11.683 1.71184 11.2925L10.9042 2.1001ZM11.6113 4.22142L3.83316 11.9996L12.3184 20.4849L20.0966 12.7067L19.036 5.28208L11.6113 4.22142ZM13.7327 10.5854C12.9516 9.80433 12.9516 8.538 13.7327 7.75695C14.5137 6.9759 15.78 6.9759 16.5611 7.75695C17.3421 8.538 17.3421 9.80433 16.5611 10.5854C15.78 11.3664 14.5137 11.3664 13.7327 10.5854Z"
+              ></path>
+            </svg>
+            <span>₪1.94<small> Per unit</small></span>
+          </div>
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z"
+              ></path>
+            </svg>
+            <span>100<small> Units per package</small></span>
+          </div>
+          <div class="image-detail-container">
+            <img src="./contrast-drop-2-line.svg" />
+            330ml&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-left-right-fill.svg" />
+            55mm&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-up-down-fill.svg" />
+            155mm
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div style="position: relative">
+          <img src="./ocan_logo_black.svg" height="32px" class="watermark" />
+          <img src="./catalog/500ml 168h square.jpg" class="image" />
+        </div>
+        <div class="image-details-container">
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.9042 2.1001L20.8037 3.51431L22.2179 13.4138L13.0255 22.6062C12.635 22.9967 12.0019 22.9967 11.6113 22.6062L1.71184 12.7067C1.32131 12.3162 1.32131 11.683 1.71184 11.2925L10.9042 2.1001ZM11.6113 4.22142L3.83316 11.9996L12.3184 20.4849L20.0966 12.7067L19.036 5.28208L11.6113 4.22142ZM13.7327 10.5854C12.9516 9.80433 12.9516 8.538 13.7327 7.75695C14.5137 6.9759 15.78 6.9759 16.5611 7.75695C17.3421 8.538 17.3421 9.80433 16.5611 10.5854C15.78 11.3664 14.5137 11.3664 13.7327 10.5854Z"
+              ></path>
+            </svg>
+            <span>₪1.99<small> Per unit</small></span>
+          </div>
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z"
+              ></path>
+            </svg>
+            <span>100<small> Units per package</small></span>
+          </div>
+          <div class="image-detail-container">
+            <img src="./contrast-drop-2-line.svg" />
+            500ml&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-left-right-fill.svg" />
+            55mm&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-up-down-fill.svg" />
+            168mm
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div style="position: relative">
+          <img src="./ocan_logo_black.svg" height="32px" class="watermark" />
+          <img src="./catalog/jar 165ml 45h.jpg" class="image" />
+        </div>
+        <div class="image-details-container">
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.9042 2.1001L20.8037 3.51431L22.2179 13.4138L13.0255 22.6062C12.635 22.9967 12.0019 22.9967 11.6113 22.6062L1.71184 12.7067C1.32131 12.3162 1.32131 11.683 1.71184 11.2925L10.9042 2.1001ZM11.6113 4.22142L3.83316 11.9996L12.3184 20.4849L20.0966 12.7067L19.036 5.28208L11.6113 4.22142ZM13.7327 10.5854C12.9516 9.80433 12.9516 8.538 13.7327 7.75695C14.5137 6.9759 15.78 6.9759 16.5611 7.75695C17.3421 8.538 17.3421 9.80433 16.5611 10.5854C15.78 11.3664 14.5137 11.3664 13.7327 10.5854Z"
+              ></path>
+            </svg>
+            <span>₪2.09<small> Per unit</small></span>
+          </div>
+          <div class="image-detail-container">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z"
+              ></path>
+            </svg>
+            <span>126<small> Units per package</small></span>
+          </div>
+          <div class="image-detail-container">
+            <img src="./contrast-drop-2-line.svg" />
+            200ml&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-left-right-fill.svg" />
+            55mm&nbsp;
+          </div>
+          <div class="image-detail-container">
+            <img src="./expand-up-down-fill.svg" />
+            78mm
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div
+      style="
+        font-size: 12px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        opacity: 70%;
+      "
+    >
+      <img src="./omertom_nocirc.svg" height="200px" />
+    </div>
+  </footer>
+</body>
