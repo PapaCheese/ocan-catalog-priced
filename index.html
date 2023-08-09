@@ -84,6 +84,7 @@
       gap: 8px;
       opacity: 70%;
       margin-bottom: 16px;
+      font-size: 24px;
     }
     .image-detail-container {
       display: flex;
@@ -94,7 +95,7 @@
 
     .image-details-container img,
     .image-details-container svg {
-      width: 18px;
+      width: 24px;
     }
 
     .watermark {
@@ -114,21 +115,21 @@
       .grid {
         grid-template-columns: auto auto auto;
       }
-    }
-    @media only screen and (max-width: 1200px) {
-      .grid {
-        grid-template-columns: auto auto;
-      }
-    }
-    @media only screen and (max-width: 700px) {
-      .grid {
-        grid-template-columns: auto;
-      }
       .image-container .image {
         width: 400px;
       }
       .image-details-container {
         width: 400px;
+      }
+    }
+    @media only screen and (max-width: 1300px) {
+      .grid {
+        grid-template-columns: auto auto;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .grid {
+        grid-template-columns: auto;
       }
     }
   </style>
