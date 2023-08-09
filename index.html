@@ -104,7 +104,17 @@
       left: 4px;
       opacity: 80%;
     }
-
+    footer div {
+      font-size: 12px;
+      padding-top: 150px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      opacity: 70%;
+    }
+    footer div img {
+      height: 200px;
+    }
     @media only screen and (max-width: 2000px) {
       .grid {
         grid-template-columns: auto auto auto auto;
@@ -130,6 +140,25 @@
     @media only screen and (max-width: 900px) {
       .grid {
         grid-template-columns: auto;
+      }
+    }
+
+    @media print {
+      .grid {
+        grid-template-columns: auto auto;
+      }
+      .image-container .image {
+        width: 400px;
+      }
+      .image-details-container {
+        width: 400px;
+      }
+      footer div {
+        padding-top: 16px;
+        padding-bottom: 0;
+      }
+      footer div img {
+        height: 120px;
       }
     }
   </style>
@@ -295,17 +324,8 @@
   </div>
 
   <footer>
-    <div
-      style="
-        font-size: 12px;
-        padding-top: 150px;
-        padding-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        opacity: 70%;
-      "
-    >
-      <img src="./omertom_nocirc.svg" height="200px" />
+    <div>
+      <img src="./omertom_nocirc.svg" />
     </div>
   </footer>
 </body>
